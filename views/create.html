@@ -1,0 +1,27 @@
+<h5>Current List:</h5>
+<form name="myForm">
+	<table class="table table-striped">
+		<tr>
+		    <td>Vehicle Name: </td>
+		    <td> <input type="text" ng-model="item.vName" /></td>
+		</tr>
+		<tr>
+		    <td>Vehicle Color: </td>
+		    <td><input type="text" ng-model="item.vColor" /></td>
+		</tr>
+		<tr>
+		    <td>Status </td>
+		    <td>
+					<select ng-model="item.action" disabled>
+						<option value="pending">Pending</option>
+				</select>
+		</tr>
+
+		<tr>
+		    <td colspan="2">
+		        <input class="btn btn-default" type="Button" value="save" ng-click="addItem(item)" />
+		        <a href="#/list">Cancel</a>
+		    </td>
+		</tr>
+	</table>
+</form>
